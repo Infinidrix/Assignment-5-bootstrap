@@ -4,41 +4,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Assets/CSS/index.css">
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li>
-                <h1>Biruk Solomon's Personal Website</h1>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top" id="tiny">
+        <!-- TODO set width for the wrapping title -->
+        <a class="navbar-brand text-wrap" href="#">Biruk Solomon's Personal Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item text-center mt-4">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item text-center mt-2">
+                    <a class="nav-link" href="editorial.html">Editorial</a>
+                </li>
+                <li class="nav-item text-center mt-2">
+                    <a class="nav-link" href="stories.html">Stories</a>
+                </li>
+                <li class="nav-item text-center mt-2">
+                    <a class="nav-link" href="personal.html">Personal</a>
+                </li>
+                <li class="nav-item text-center mt-2">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item active text-center mt-2">
+                    <a class="nav-link" href="contact_us.html">Contact + About me.</a>
+                </li>
+                <li class="nav-item text-center mt-3">
+                    <a class="ml-3" href="https://github.com/Infinidrix"></a><img src="Assets/Images/iconmonstr-github-1.svg" alt="Github">
+                    <a class="ml-3" href="https://t.me/Biruk_S"></a><img src="Assets/Images/iconmonstr-telegram-4.svg" alt="Telegram">
+                    <a class="ml-3" href="https://www.linkedin.com/in/BirukSolomon"></a><img src="Assets/Images/iconmonstr-linkedin-4.svg" alt="LinkedIn">
+                </li>
+                <li class="navbar-text text-center">
+                    <p>Using <a href="https://getbootstrap.com">Format</a></p>
+                </li>
+                <li class="navbar-text text-center">
+                    <p>Biruk Solomon 2019</p>
+                </li>
+            </ul>
+        
+            <!--
+            <ul>
+                <a href="https://github.com/Infinidrix"></a><img src="Assets/Images/iconmonstr-github-1.svg" alt="Github">
+                <a href="https://t.me/Biruk_S"></a><img src="Assets/Images/iconmonstr-telegram-4.svg" alt="Telegram">
+                <a href="https://www.linkedin.com/in/BirukSolomon"></a><img src="Assets/Images/iconmonstr-linkedin-4.svg" alt="LinkedIn">
+                <a href="contact_us.html"></a><img src="Assets/Images/iconmonstr-sharethis-4.svg" alt="Share this">
+            </ul>
+            -->
+        </div>
+    </nav>
+    <nav id="huge">
+        <a class="text-center text-wrap" href="home.html">Biruk Solomon's Personal Website</a>
+        
+        
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item text-center mt-4">
+                <a class="nav-link" href="home.html">Home</a>
             </li>
-            <li>
-                <a href="home.html">Home</a>
+            <li class="nav-item text-center mt-2">
+                <a class="nav-link" href="editorial.html">Editorial</a>
             </li>
-            <li>
-                <a href="editorial.html">Editorial</a>
+            <li class="nav-item text-center mt-2">
+                <a class="nav-link" href="stories.html">Stories</a>
             </li>
-            <li>
-                <a href="stories.html">Stories</a>
+            <li class="nav-item text-center mt-2">
+                <a class="nav-link" href="personal.html">Personal</a>
             </li>
-            <li>
-                <a href="personal.html">Personal</a>
+            <li class="nav-item text-center mt-2">
+                <a class="nav-link" href="blog.html">Blog</a>
             </li>
-            <li>
-                <a href="blog.html">Blog</a>
+            <li class="nav-item active text-center mt-2">
+                <a class="nav-link" href="contact_us.html">Contact + About me.</a>
             </li>
-            <li>
-                <a href="contact_us.html">Contact us</a>
+            <!-- TODO: margin set for after this comment -->
+            <li class="nav-item text-center" id="bottom_text">
+                <a class="ml-1" href="https://github.com/Infinidrix"><img src="Assets/Images/iconmonstr-github-1.svg" alt="Github"></a>
+                <a class="ml-1" href="https://t.me/Biruk_S"><img src="Assets/Images/iconmonstr-telegram-4.svg" alt="Telegram"></a>
+                <a class="ml-1" href="https://www.linkedin.com/in/BirukSolomon"><img src="Assets/Images/iconmonstr-linkedin-4.svg" alt="LinkedIn"></a>
+                <a class="ml-3 bg-dark rounded-pill pl-1 pr-1" href="contact_us.html">Share</a>
             </li>
-        </ul>
-        <ul>
-            <li><a href="https://github.com/Infinidrix"></a><img src="Assets/Images/iconmonstr-github-1.svg" alt="Github"></li>
-            <li><a href="https://t.me/Biruk_S"></a><img src="Assets/Images/iconmonstr-telegram-4.svg" alt="Telegram"></li>
-            <li><a href="https://www.linkedin.com/in/BirukSolomon"></a><img src="Assets/Images/iconmonstr-linkedin-4.svg" alt="LinkedIn"></li>
-            <li><a href="contact_us.html"></a><img src="Assets/Images/iconmonstr-sharethis-4.svg" alt="Share this"></li>
+            <li class="navbar-text text-center">
+                <p>Using <a href="https://getbootstrap.com">Format</a></p>
+            </li>
+            <li class="navbar-text text-center">
+                <p>Biruk Solomon 2019</p>
+            </li>
         </ul>
     </nav>
-
+    <!--
     <table>
         <tr>
         <td width = "300">
@@ -106,5 +165,9 @@
         </td>
         </tr>
     </table>
+    -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
