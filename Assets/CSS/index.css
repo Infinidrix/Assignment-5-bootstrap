@@ -1,0 +1,39 @@
+@media screen and (min-width: 546px) {
+    #tiny{
+        display: none;
+    }
+    #huge{
+        display: inline-block;
+    }
+    body{
+        margin-top: 0px;
+    }
+}@media screen and (max-width: 546px) {
+    #huge{
+        display: none;
+    }
+    body{
+        margin-top: 60px;
+    }
+}
+
+#tiny{
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+#huge{
+    width: 204px;
+    position: fixed;
+    left: 60px;
+    opacity: 0.7;
+    height: 100vh;
+    overflow: visible;
+}
+#bottom_text{
+    margin-top: 250px;
+}
+#scroller{
+    display: flex;
+    width: 100%;
+}
