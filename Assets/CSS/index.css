@@ -1,4 +1,6 @@
-@media screen and (min-width: 546px) {
+/* TODO: Set global font to Times New Roman */
+
+@media screen and (min-width: 768px) {
     #tiny{
         display: none;
     }
@@ -8,7 +10,11 @@
     body{
         margin-top: 0px;
     }
-}@media screen and (max-width: 546px) {
+}
+@media screen and (max-width: 768px) {
+    #navbarSupportedContent{
+        height: 100vh;
+    }
     #huge{
         display: none;
     }
@@ -29,6 +35,8 @@
     opacity: 0.7;
     height: 100vh;
     overflow: visible;
+    display: flex;
+    align-items: center;
 }
 #bottom_text{
     margin-top: 250px;
@@ -36,4 +44,6 @@
 #scroller{
     display: flex;
     width: 100%;
+    height: 100vh;
+    align-items: center;
 }
