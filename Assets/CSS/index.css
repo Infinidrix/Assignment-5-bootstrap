@@ -10,23 +10,37 @@
     body{
         margin-top: 0px;
     }
+    #scroller{
+        height: 93vh;
+        position: relative;
+        left: 300px;
+    }
 }
 @media screen and (max-width: 768px) {
     #navbarSupportedContent{
         height: 100vh;
     }
     #huge{
-        display: none;
+        display: none!important;
     }
     body{
         margin-top: 60px;
+    }
+    #scroller{
+        height: 80vh;
     }
 }
 
 a, a:hover{
     color: rgb(0, 0, 0);
 }
-
+div#scroller img{
+    height: 95%;
+}
+textarea, textarea:focus{
+    border-color: rgba(0, 0, 0, 0.3);
+    outline: none;
+}
 body{
     text-decoration: none solid rgb(0, 0, 0);
     font-family: "Times New Roman", "Times Roman", serif;
@@ -38,7 +52,9 @@ body{
 #tiny{
     width: 100%;
     position: fixed;
-    top: 0;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
 }
 #huge{
     width: 204px;
@@ -56,11 +72,18 @@ body{
 #bottom_text{
     margin-top: 250px;
 }
+#tiny-bottom{
+    position: fixed;
+    bottom: 1%;
+    right: 0;
+    text-decoration: underline;
+    z-index: 100;
+}
 #scroller{
-    position: relative;
-    left: 300px;
     display: flex;
     width: 100%;
-    height: 100vh;
     align-items: center;
+}
+hr{
+    border-top: black solid 1px;
 }
